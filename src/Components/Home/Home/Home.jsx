@@ -4,6 +4,7 @@ import Gallery from '../Gallery/Gallery';
 import Extra from '../../Extra/Extra';
 import Extra2 from '../../Extra/Extra2';
 
+
 const Home = () => {
     return (
         <div className="bg-rose-50">
@@ -11,6 +12,7 @@ const Home = () => {
             <Gallery></Gallery>
             <Extra2></Extra2>
             <Extra></Extra>
+           
             
         </div>
     );
