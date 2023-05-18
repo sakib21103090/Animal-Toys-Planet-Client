@@ -28,7 +28,7 @@ const SignUp = () => {
                         <label className="label">
                             <span className="label-text">Email</span>
                         </label>
-                        <input type="text" name='email' placeholder="email" className="input input-bordered" required/>
+                        <input type="text" name='email' placeholder=" enter email" className="input input-bordered" required/>
                     </div>
                     <div className="form-control">
                         <label className="label">
@@ -43,7 +43,7 @@ const SignUp = () => {
                         <input className="btn bg-amber-300 text-black" type="submit" value="Create Account" />
                     </div>
                 </form>
-                <p className='my-4 text-center'>Already Have an Account? <Link className='text-purple-600 font-bold' to="/login">Login</Link> </p>
+                <p className='my-4 text-center'> Already Have an Account? <Link className='text-purple-600 font-bold' to="/login">Login</Link> </p>
             </div>
         </div>
     </div>
