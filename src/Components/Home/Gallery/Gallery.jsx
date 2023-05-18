@@ -54,10 +54,10 @@ const Gallery = () => {
           <img src={`https://i.ibb.co/cJn62DM/14.jpg`} alt="Image 3" className="w-[600px] h-[260px] rounded" />
         </div>
         <div className="aos-item" data-aos="fade-up">
-          <img src={`https://i.ibb.co/CvJLsw7/3B-c.jpg`} alt="Image 3" className="w-[600px] h-[260px] rounded" />
+          <img src={` https://i.ibb.co/BBt0FjW/15.jpg`} alt="Image 3" className="w-[600px] h-[260px] rounded" />
         </div>
         <div className="aos-item" data-aos="fade-up">
-          <img src={`https://i.ibb.co/BBt0FjW/15.jpg`} alt="Image 3" className="w-[600px] h-[260px] rounded" />
+          <img src={`https://i.ibb.co/CvJLsw7/3B-c.jpg`} alt="Image 3" className="w-[600px] h-[260px] rounded" />
         </div>
         {/* Add more images as needed */}
       </div>
