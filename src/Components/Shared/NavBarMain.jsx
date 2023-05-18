@@ -22,6 +22,7 @@ const NavBarMain = () => {
             <li><Link className='text-black-300' to="/">Home</Link> </li>
             <li><Link className='text-black-300' to="/AllToys">All Toys</Link> </li>
             <li><Link className='text-black-300' to="/AddAToy">Add A Toy</Link> </li>
+            <li><Link className='text-black-300' to="/MyToy">My Toys</Link> </li>
             <li><Link className='text-black-300' to="/Blog">Blog</Link> </li>
               
             
@@ -36,6 +37,7 @@ const NavBarMain = () => {
             <li><Link className='text-lime-200' to="/">Home</Link> </li>
             <li><Link className='text-lime-200' to="/AllToys">All Toys</Link> </li>
             <li><Link className='text-lime-200' to="/AddAToy">Add A Toy</Link> </li>
+            <li><Link className='text-black-300' to="/MyToy">My Toys</Link> </li>
             <li><Link className='text-lime-200' to="/Blog">Blog</Link> </li>
           </ul>
         </div>
