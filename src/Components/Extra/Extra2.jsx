@@ -40,7 +40,7 @@ const Extra2 = () => {
     <li>-Mattel</li>
     <li>-Fisher-Price</li>
     <li>-MGA Entertainment</li>
-    <li>-Playmobil</li>
+    <li>-Playmobill</li>
   </ul>
   </p>
   
