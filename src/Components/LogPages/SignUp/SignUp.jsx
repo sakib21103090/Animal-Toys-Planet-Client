@@ -1,7 +1,38 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../Providers/AuthProviders';
+
 
 const SignUp = () => {
+    const [error ,setError]=useState('');
+
+    const {createUser}=useContext(AuthContext);
+    const HandelRegister=event=>{
+        event.preventDefault();
+        const form =event.target;
+        const name=form.name.value;
+        const email=form.email.value;
+        const photo=form.photo.value;
+        const password=form.password.value;
+        console.log(name,photo,email,password)
+
+        setError('')
+        if (password.length <6){
+          setError('please set password up to six character')
+          return
+      }
+
+        createUser(email,password)
+        .then(result => {
+        
+            const createdUser = result.user;
+            console.log(createdUser);
+          })
+          .catch(error => {
+            console.log(error);
+            setError('wrong input please input valid data');
+          });
+    }
     return (
         <div className="hero min-h-screen bg-rose-100">
     <div className="hero-content flex-col lg:flex-row">
@@ -11,7 +42,7 @@ const SignUp = () => {
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-lime-100">
             <div className="card-body">
                 <h1 className="text-3xl text-center font-bold"> Please Sign Up</h1>
-                <form>
+                <form onSubmit={HandelRegister}>
                     <div className="form-control">
                         <label className="label">
                             <span className="label-text">Name</span>
@@ -28,7 +59,7 @@ const SignUp = () => {
                         <label className="label">
                             <span className="label-text">Email</span>
                         </label>
-                        <input type="text" name='email' placeholder=" enter email" className="input input-bordered" required/>
+                        <input type="text" name='email' placeholder=" Enter email" className="input input-bordered" required/>
                     </div>
                     <div className="form-control">
                         <label className="label">
@@ -44,6 +75,9 @@ const SignUp = () => {
                     </div>
                 </form>
                 <p className='my-4 text-center'> Already Have an Account? <Link className='text-purple-600 font-bold' to="/login">Login</Link> </p>
+                <div>
+                        <p className=' text-black  bg-orange-400 text-center rounded border fw-bold mt-2'> <small>{error}</small></p>
+                        </div>
             </div>
         </div>
     </div>

@@ -6,6 +6,7 @@ import AddAToy from "../Components/AddAToy/AddAToy";
 import Blog from "../Components/Blog/Blog";
 import Login from "../Components/LogPages/Login";
 import SignUp from "../Components/LogPages/SignUp/SignUp";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
     {
@@ -22,7 +23,7 @@ const router = createBrowserRouter([
         },
         {
           path : '/AddAToy',
-            element : <AddAToy></AddAToy>
+            element : <PrivateRoute><AddAToy></AddAToy></PrivateRoute>
         },
         {
           path : '/Blog',

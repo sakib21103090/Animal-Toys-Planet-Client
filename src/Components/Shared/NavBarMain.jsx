@@ -1,9 +1,15 @@
-import React from 'react';
-import logo from '../../assets/logoweb.png'
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../Providers/AuthProviders';
 
 
 const NavBarMain = () => {
+  const {user,logOut}=useContext(AuthContext);
+  const handleLogOut = () => {
+      logOut()
+          .then()
+          .catch(error => console.log(error));
+  }
    
     return (
         <div className="navbar bg-slate-950 ">
@@ -31,16 +37,13 @@ const NavBarMain = () => {
             <li><Link className='text-lime-200' to="/AllToys">All Toys</Link> </li>
             <li><Link className='text-lime-200' to="/AddAToy">Add A Toy</Link> </li>
             <li><Link className='text-lime-200' to="/Blog">Blog</Link> </li>
-
           </ul>
         </div>
-        <div>
-            
+        <div>     
         </div>
         <div className="navbar-end">
-        {/* <img className='w-[50px] btn-circle' src={logo} alt="" /> */}
-        <h3 className="text-lime-200">profile</h3>
-          <Link to="/login" className="btn btn-success bg-lime-100 mx-4">Login</Link>
+          {user && <img className='rounded-full w-[50px] m-4' src={user.photoURL} alt={user.displayName} /> }
+           {user ? <button onClick={handleLogOut} className="btn btn-outline bg-lime-100 m-4">Log Out</button>:<Link to="/login" className="btn btn-success bg-lime-100 mx-4">Login</Link> }
         </div>
       </div>
     );
