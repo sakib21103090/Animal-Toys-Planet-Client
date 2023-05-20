@@ -34,6 +34,8 @@ const Extra2 = () => {
   <h2 className="card-title text-6xl font-bold text-red-600">Toy brand </h2>
   <p className='text-5xl text-lime-600'>BRAND FINANCE TOYS 25 2023</p>
   <p className='text-4xl  text-black'>Here are the names of six popular toy brands show the  Vertical carousel.
+  
+  </p>
   <ul className='text-3xl'>
     <li>-LEGO</li>
     <li>-Hasbro</li>
@@ -42,7 +44,6 @@ const Extra2 = () => {
     <li>-MGA Entertainment</li>
     <li>-Playmobill</li>
   </ul>
-  </p>
   
 </div>
 </div>

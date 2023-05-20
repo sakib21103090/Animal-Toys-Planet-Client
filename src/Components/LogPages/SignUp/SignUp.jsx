@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../Providers/AuthProviders';
+import SignInMethod from '../../SignInMethod/SignInMethod';
 
 
 const SignUp = () => {
