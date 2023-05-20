@@ -28,6 +28,7 @@ const AllToys = () => {
             </div>
             <h1 className="text-center p-4  text-4xl font-bold">ALL Toys</h1>
         <div className="search-box p-2 text-center">
+          <h4 className='text-center mb-4 text-3xl'>Search By Toy Name</h4>
           <input
             onChange={(e) => setSearchName(e.target.value)}
             type="text"
