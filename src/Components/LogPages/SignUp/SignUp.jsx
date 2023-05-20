@@ -1,7 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../Providers/AuthProviders';
-import SignInMethod from '../../SignInMethod/SignInMethod';
 
 
 const SignUp = () => {
@@ -11,7 +10,7 @@ const SignUp = () => {
     const HandelRegister=event=>{
         event.preventDefault();
         const form =event.target;
-        const name=form.name.value;
+        const name=form.displayName.value;
         const email=form.email.value;
         const photo=form.photo.value;
         const password=form.password.value;
@@ -48,7 +47,7 @@ const SignUp = () => {
                         <label className="label">
                             <span className="label-text">Name</span>
                         </label>
-                        <input type="text" name='name' placeholder="name" className="input input-bordered" required />
+                        <input type="text" name='displayName' placeholder="name" className="input input-bordered" required />
                     </div>
                     <div className="form-control">
                         <label className="label">

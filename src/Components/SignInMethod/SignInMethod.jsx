@@ -31,7 +31,7 @@ const SignInMethod = () => {
 
     return (
         <div className='mb-4'>  
-               <button onClick={handelGoogle} class="btn gap-2 bg-amber-300 text-green-950 w-full mb-4"  ><FaGoogle></FaGoogle>Google</button>
+               <button onClick={handelGoogle} className="btn gap-2 bg-amber-300 text-green-950 w-full mb-4"  ><FaGoogle></FaGoogle>Google</button>
                 
    </div>
     );

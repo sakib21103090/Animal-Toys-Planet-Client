@@ -1,15 +1,30 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useForm } from 'react-hook-form';
+import { AuthContext } from '../Providers/AuthProviders';
 
 const AddAToy = () => {
+
+    const {user} = useContext(AuthContext);
+  console.log(user)
+//   const {displayName,email}=user;
+
     const { register, handleSubmit } = useForm();
 
     const onSubmit = (data) => {
-      console.log(data);
-      // Perform further actions with the submitted data
+        fetch("http://localhost:5000/AddAToy", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(data),
+          })
+            .then((res) => res.json())
+            .then((result) => {
+              console.log(result);
+            });
+          console.log(data);
+     
     };
     return (
-        <div class>
+        <div>
             <div>
                  <h2 className="text-center font-bold text-black text-5xl m-6 p-6">Add A Toy</h2>
             </div>
@@ -17,31 +32,32 @@ const AddAToy = () => {
             <form onSubmit={handleSubmit(onSubmit)} className="max-w-md mx-auto mb-5">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
-          <label htmlFor="pictureUrl" className="block  mb-1">Picture URL of the toy:</label>
+          <label htmlFor="pictureUrl" className="block  mb-1"> Toy Picture URL:</label>
           <input type="text" id="pictureUrl" {...register('pictureUrl')} className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-lime-500" />
         </div>
 
         <div>
-          <label htmlFor="name" className="block  mb-1">Name:</label>
+          <label htmlFor="name" className="block  mb-1"> Toy Name:</label>
           <input type="text" id="name" {...register('name')} className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-lime-500" />
         </div>
 
         <div>
           <label htmlFor="sellerName" className="block  mb-1">Seller name (if available):</label>
-          <input type="text" id="sellerName" {...register('sellerName')} className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-lime-500" />
+          <input type="text" id="sellerName" {...register('sellerName')}  defaultValue={user?.displayName} className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-lime-500" />
+         
         </div>
 
         <div>
           <label htmlFor="sellerEmail" className="block  mb-1">Seller email:</label>
-          <input type="email" id="sellerEmail" {...register('sellerEmail')} className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-lime-500" />
+          <input type="email" id="sellerEmail" {...register('sellerEmail')} defaultValue={user?.email} className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-lime-500" />
         </div>
 
         <div>
           <label htmlFor="subCategory" className="block  mb-1">Sub-category:</label>
           <select id="subCategory" {...register('subCategory')} className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-lime-500">
-            <option value="Math Toys">Amphibians</option>
-            <option value="Language Toys">TeddyBear</option>
-            <option value="Science Toys">Reptiles</option>
+            <option value="Amphibians">Amphibians</option>
+            <option value="TeddyBear">TeddyBear</option>
+            <option value="Reptiles">Reptiles</option>
           </select>
         </div>
 
