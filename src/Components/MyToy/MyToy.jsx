@@ -1,9 +1,12 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../Providers/AuthProviders';
+import Delete from '../AllToys/Delete';
 
 const MyToy = () => {
     const [MyToys, setMyToys] = useState([]);
     const { user } = useContext(AuthContext);
+    
+    
     useEffect(() => {
         fetch(`http://localhost:5000/MyToys/${user?.email}`)
           .then((res) => res.json())
@@ -12,6 +15,25 @@ const MyToy = () => {
             setMyToys(data);
           });
       }, [user]);
+
+      const handleDelete = id => {
+        console.log(id)
+        const proceed = confirm('Are You sure you want to delete');
+        if (proceed) {
+            fetch(`http://localhost:5000/MyToys/${id}`, {
+                method: 'DELETE'
+            })
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data);
+                    if (data.deletedCount > 0) {
+                        alert('deleted successful');
+                        const remaining = MyToys.filter(Toys => Toys._id !== id);
+                        setMyToys(remaining);
+                    }
+                })
+        }
+    }
     return (
       <div>
       <div>
@@ -35,24 +57,12 @@ const MyToy = () => {
       </tr>
     </thead> 
     <tbody>
-       {MyToys?.map((Toys, index) => (
-        <tr className='text-black'>
-          <th>{index+1}</th> 
-         
-        <td>{Toys.name}</td> 
-        <td>{Toys.subCategory}</td> 
-        <td><img className='w-[60px] rounded-full' src={Toys.pictureUrl} alt="" /></td> 
-        <td>{Toys.price}</td> 
-        <td>{Toys.quantity}</td>
-        <td>
-        <button className="btn btn-outline bg-red-400">Update</button>
-          </td>
-        <td>
-        <button className="btn btn-outline bg-red-400">Delete</button>
-          </td>
-        </tr>
-      ))}
-      
+    {MyToys?.map((Toys, index) => (
+                    <Delete
+                    Toys={Toys}
+                    handleDelete={handleDelete}
+                    ></Delete>
+            ))}
 
     </tbody> 
     <tfoot>
