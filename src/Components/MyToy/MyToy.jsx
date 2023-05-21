@@ -11,7 +11,7 @@ const MyToy = () => {
     
     
     useEffect(() => {
-        fetch(`http://localhost:5000/MyToys/${user?.email}`)
+        fetch(`https://y-ebon-pi.vercel.app/MyToys/${user?.email}`)
           .then((res) => res.json())
           .then((data) => {
             console.log(data);
@@ -23,7 +23,7 @@ const MyToy = () => {
         console.log(id)
         const proceed = confirm('Are You sure you want to delete');
         if (proceed) {
-            fetch(`http://localhost:5000/MyToys/${id}`, {
+            fetch(`https://y-ebon-pi.vercel.app/MyToys/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())

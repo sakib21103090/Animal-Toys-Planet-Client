@@ -45,7 +45,7 @@ const router = createBrowserRouter([
         {
           path : 'modal/:id',
             element :<Modal></Modal>,
-            loader: ({params}) => fetch(`http://localhost:5000/allToy/${params.id}`)
+            loader: ({params}) => fetch(`https://y-ebon-pi.vercel.app/allToy/${params.id}`)
         },
         {
           path : '/SignUp',

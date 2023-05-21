@@ -10,7 +10,7 @@ const AddAToy = () => {
     const { register, handleSubmit } = useForm();
 
     const onSubmit = (data) => {
-        fetch("http://localhost:5000/AddAToy", {
+        fetch("https://y-ebon-pi.vercel.app/AddAToy", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(data),

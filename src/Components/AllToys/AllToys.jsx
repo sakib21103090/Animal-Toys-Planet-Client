@@ -11,7 +11,7 @@ const AllToys = () => {
     
 
     useEffect(() => {
-        fetch(' http://localhost:5000/AllToys')
+        fetch(' https://y-ebon-pi.vercel.app/AllToys')
             .then(res => res.json())
 
             .then(data => setAllToys(data));
@@ -22,7 +22,7 @@ const AllToys = () => {
 
 
       const handleSearch = () => {
-        fetch(`http://localhost:5000/getToyName/${SearchName}`)
+        fetch(`https://y-ebon-pi.vercel.app/getToyName/${SearchName}`)
           .then((res) => res.json())
           .then((data) => {
             console.log(data);

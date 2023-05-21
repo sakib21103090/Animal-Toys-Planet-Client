@@ -7,7 +7,7 @@ const Category = () => {
     const [ToysData, setToysData] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/Category')
+        fetch('https://y-ebon-pi.vercel.app/Category')
             .then(res => res.json())
 
             .then(data => (data.map(newData=>setToysData(newData))));
