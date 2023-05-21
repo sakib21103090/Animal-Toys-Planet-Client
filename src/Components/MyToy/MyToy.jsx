@@ -75,13 +75,14 @@ const MyToy = () => {
     </tbody> 
     <tfoot>
       <tr>
-      <th>SL</th> 
-      <th> SellerName</th> 
+      <th>SL</th>  
         <th>Toy Name</th> 
         <th>Sub-category</th> 
+        <th>pictureUrl</th> 
         <th>Price</th> 
         <th>Available Quantity</th>
-        <th>Button</th>
+        <th>Update</th>
+        <th>Delete</th>
       </tr>
     </tfoot>
   </table>

@@ -18,6 +18,7 @@ const Delete = ({Toys,handleDelete,index}) => {
       <td>
       <button  onClick={()=>handleDelete(_id)} className="btn btn-outline btn-sm w-[60px] bg-lime-400">Delete</button>
         </td>
+        
       </tr>
     );
 };

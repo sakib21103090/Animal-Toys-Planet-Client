@@ -12,7 +12,7 @@ const NavBarMain = () => {
   }
    
     return (
-        <div className="navbar bg-slate-950 ">
+        <div className="navbar bg-slate-900 ">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-success lg:hidden">
@@ -37,7 +37,7 @@ const NavBarMain = () => {
             <li><Link className='text-lime-200' to="/">Home</Link> </li>
             <li><Link className='text-lime-200' to="/AllToys">All Toys</Link> </li>
            {user&& <li><Link className='text-lime-200' to="/AddAToy">Add A Toy</Link> </li>}
-          { user&&<li ><Link className='text-lime-300' to="/MyToy">My Toys</Link> </li>}
+          { user&&<li ><Link className='text-lime-200' to="/MyToy">My Toys</Link> </li>}
          <li><Link className='text-lime-200' to="/Blog">Blog</Link> </li>
           </ul>
         </div>

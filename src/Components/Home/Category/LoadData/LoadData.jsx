@@ -12,7 +12,7 @@ const LoadData = ({Toy}) => {
         <p className="py-6 font-bold">Price: {price}</p>
         <p>Rating:{rating}</p>
         <div>
-        <button  className="btn btn-warning mt-5">Warning</button>
+        <button htmlFor="my-modal-6" className="btn btn-outline btn-sm mt-6 bg-lime-400">Details</button>
         </div>
       </div>
       <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">

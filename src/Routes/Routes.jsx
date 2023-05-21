@@ -9,6 +9,7 @@ import SignUp from "../Components/LogPages/SignUp/SignUp";
 import PrivateRoute from "./PrivateRoute";
 import MyToy from "../Components/MyToy/MyToy";
 import Error from "../Components/Extra/Error";
+import Modal from "../Components/AllToys/Modal";
 
 
 const router = createBrowserRouter([
@@ -40,6 +41,11 @@ const router = createBrowserRouter([
         {
           path : '/login',
             element : <Login></Login>
+        },
+        {
+          path : 'modal/:id',
+            element : <Modal></Modal>,
+            loader: ({params}) => fetch(`http://localhost:5000/allToy/${params.id}`)
         },
         {
           path : '/SignUp',
