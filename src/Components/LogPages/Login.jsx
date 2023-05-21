@@ -4,6 +4,7 @@ import { AuthContext } from '../Providers/AuthProviders';
 import SignInMethod from '../SignInMethod/SignInMethod';
 import Swal from 'sweetalert2';
 import 'sweetalert2/dist/sweetalert2.css';
+import { Helmet } from 'react-helmet';
 
 // import {  FaGithub, FaGoogle } from 'react-icons/fa';
 // import PopUp from '../PopUp/PopUp';;
@@ -45,7 +46,12 @@ const Login = () => {
     
     }
     return (
-        <div className="hero min-h-screen bg-rose-100">
+        <div>
+            
+            <Helmet>
+        <title>Animal-Toy-planet |Login</title>
+      </Helmet>
+            <div className="hero min-h-screen bg-rose-100">
             <div className="hero-content flex-col lg:flex-row">
                 <div className="w-1/2 mr-12">
                     <img className='w-[600px]  rounded-2xl' src={`https://i.ibb.co/5FgjVhq/download.png`} alt="" />
@@ -83,6 +89,7 @@ const Login = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     );
 };

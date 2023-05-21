@@ -44,7 +44,7 @@ const router = createBrowserRouter([
         },
         {
           path : 'modal/:id',
-            element :<Modal></Modal>,
+            element :<PrivateRoute><Modal></Modal></PrivateRoute>,
             loader: ({params}) => fetch(`https://y-ebon-pi.vercel.app/allToy/${params.id}`)
         },
         {

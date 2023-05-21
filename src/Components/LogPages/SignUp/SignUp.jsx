@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { AuthContext } from '../../Providers/AuthProviders';
 import Swal from 'sweetalert2';
 import 'sweetalert2/dist/sweetalert2.css';
+import { Helmet } from 'react-helmet';
 
 const SignUp = () => {
     const [error ,setError]=useState('');
@@ -35,7 +36,12 @@ const SignUp = () => {
           });
     }
     return (
-        <div className="hero min-h-screen bg-rose-100">
+     
+        <div>
+               <Helmet>
+        <title>Animal-Toy-planet |SignUp</title>
+      </Helmet>
+            <div className="hero min-h-screen bg-rose-100">
     <div className="hero-content flex-col lg:flex-row">
         <div className="w-1/2 mr-12">
         <img className='w-[600px] rounded-3xl' src={`https://i.ibb.co/5FgjVhq/download.png`} alt="" />
@@ -83,6 +89,7 @@ const SignUp = () => {
         </div>
     </div>
 </div>
+        </div>
     );
 };
 
