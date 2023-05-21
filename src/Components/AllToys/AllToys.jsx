@@ -66,35 +66,33 @@ const AllToys = () => {
               <td>{Toys.subCategory}</td> 
               <td>{Toys.price}</td> 
               <td>{Toys.quantity}</td>
-              <td>
-              <label htmlFor="my-modal-6" className="btn btn-outline btn-sm w-[60px] bg-lime-400">Details</label>
+              <td><label htmlFor="my-modal-6" className="btn btn-outline btn-sm w-[60px] bg-lime-400">Details</label>
 
-                    {/* Put this part before </body> tag */}
-                   <input type="checkbox" id="my-modal-6" className="modal-toggle" />
-                   <div className="modal modal-bottom  sm:modal-middle">
-                   <div className="modal-box ">
-            <div className="card card-compact w-96 bg-base-100 shadow-xl">
-  <figure><img src={Toys.pictureUrl} alt="Shoes" /></figure>
-  <div className="card-body">
-    <h2 className="card-title">{Toys.name}</h2>
-   <div className='text-green-800 text-2xl '>
-   <p>sellerName:{Toys.sellerName}</p>
-    <p>sellerEmail:{Toys.sellerEmail}</p>
-    <p>subCategory:{Toys.subCategory}</p>
-    <p>price:${Toys.price}</p>
-    <p>rating:{Toys.rating}</p>
-    <p>quantity:{Toys.quantity}</p>
-   </div>
-   
-  
-  </div>
+{/* Put this part before </body> tag */}
+<input type="checkbox" id="my-modal-6" className="modal-toggle" />
+<div className="modal modal-bottom  sm:modal-middle">
+<div className="modal-box ">
+<div className="card card-compact w-96 bg-base-100 shadow-xl">
+<figure><img src={Toys.pictureUrl} alt="Shoes" /></figure>
+<div className="card-body">
+<h2 className="card-title">{Toys.name}</h2>
+<div className='text-green-800 text-2xl '>
+<p>sellerName:{Toys.sellerName}</p>
+<p>sellerEmail:{Toys.sellerEmail}</p>
+<p>subCategory:{Toys.subCategory}</p>
+<p>price:${Toys.price}</p>
+<p>rating:{Toys.rating}</p>
+<p>quantity:{Toys.quantity}</p>
 </div>
-                         <div className="modal-action">
-                     <label htmlFor="my-modal-6" className="btn btn-outline btn-sm w-[60px] bg-lime-400">Cancel</label>
-                       </div>
-        </div>
-                 </div>       
-                </td>
+
+
+</div>
+</div>
+     <div className="modal-action">
+ <label htmlFor="my-modal-6" className="btn btn-outline btn-sm w-[60px] bg-lime-400">Cancel</label>
+   </div>
+</div>
+</div>  </td>
                
               </tr>
             ))}

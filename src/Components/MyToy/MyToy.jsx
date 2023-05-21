@@ -61,6 +61,7 @@ const MyToy = () => {
                     <Delete
                     Toys={Toys}
                     handleDelete={handleDelete}
+                    index={index}
                     ></Delete>
             ))}
 

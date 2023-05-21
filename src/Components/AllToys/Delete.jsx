@@ -13,10 +13,10 @@ const Delete = ({Toys,handleDelete,index}) => {
       <td>{Toys.price}</td> 
       <td>{Toys.quantity}</td>
       <td>
-      <button className="btn btn-outline bg-red-400">Update</button>
+      <button className="btn btn-outline btn-sm w-[60px] bg-lime-400">Update</button>
         </td>
       <td>
-      <button  onClick={()=>handleDelete(_id)} className="btn btn-outline bg-red-400">Delete</button>
+      <button  onClick={()=>handleDelete(_id)} className="btn btn-outline btn-sm w-[60px] bg-lime-400">Delete</button>
         </td>
       </tr>
     );

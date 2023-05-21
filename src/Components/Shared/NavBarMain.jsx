@@ -36,9 +36,9 @@ const NavBarMain = () => {
           <ul className="menu menu-horizontal px-1 gap-2">
             <li><Link className='text-lime-200' to="/">Home</Link> </li>
             <li><Link className='text-lime-200' to="/AllToys">All Toys</Link> </li>
-            <li><Link className='text-lime-200' to="/AddAToy">Add A Toy</Link> </li>
-            <li><Link className='text-lime-300' to="/MyToy">My Toys</Link> </li>
-            <li><Link className='text-lime-200' to="/Blog">Blog</Link> </li>
+           {user&& <li><Link className='text-lime-200' to="/AddAToy">Add A Toy</Link> </li>}
+          { user&&<li ><Link className='text-lime-300' to="/MyToy">My Toys</Link> </li>}
+         <li><Link className='text-lime-200' to="/Blog">Blog</Link> </li>
           </ul>
         </div>
         <div>     
