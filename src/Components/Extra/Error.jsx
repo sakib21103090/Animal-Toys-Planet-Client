@@ -1,8 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import { Helmet } from 'react-helmet';
 const Error = () => {
     return (
+      <div>
+         <Helmet>
+           <title>Animal-Toy-planet | Error</title>
+         </Helmet>
         <div className="flex flex-col items-center justify-center h-screen bg-rose-50">
       <img
         src={`https://i.ibb.co/8BKM3tY/download-1.png`}
@@ -17,6 +21,7 @@ const Error = () => {
         Go Back to Home
       </Link>
     </div> 
+      </div>
     );
 };
 

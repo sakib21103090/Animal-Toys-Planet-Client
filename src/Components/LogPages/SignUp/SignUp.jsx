@@ -1,7 +1,8 @@
 import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../Providers/AuthProviders';
-
+import Swal from 'sweetalert2';
+import 'sweetalert2/dist/sweetalert2.css';
 
 const SignUp = () => {
     const [error ,setError]=useState('');
@@ -15,7 +16,7 @@ const SignUp = () => {
         const photo=form.photo.value;
         const password=form.password.value;
         console.log(name,photo,email,password)
-
+        Swal.fire('Hey', 'Account Create successful', 'success');
         setError('')
         if (password.length <6){
           setError('please set password up to six character')

@@ -3,6 +3,9 @@ import React from 'react';
 import { FaGithub, FaGoogle } from 'react-icons/fa';
 import {  useLocation, useNavigate } from 'react-router-dom';
 import app from '../../Firebase/firebase.config';
+import Swal from 'sweetalert2';
+import 'sweetalert2/dist/sweetalert2.css';
+
 
 const SignInMethod = () => {
     const navigate=useNavigate();
@@ -19,6 +22,7 @@ const SignInMethod = () => {
         signInWithPopup(auth,provider)
         .then(result=>{
           const user=result.user;
+          Swal.fire('Hey', 'Login successful', 'success');
            navigate(from,{replace :true});
           
         })

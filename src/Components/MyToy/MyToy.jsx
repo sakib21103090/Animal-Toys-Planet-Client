@@ -1,6 +1,9 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../Providers/AuthProviders';
 import Delete from '../AllToys/Delete';
+import Swal from 'sweetalert2';
+import 'sweetalert2/dist/sweetalert2.css';
+import { Helmet } from 'react-helmet';
 
 const MyToy = () => {
     const [MyToys, setMyToys] = useState([]);
@@ -27,7 +30,7 @@ const MyToy = () => {
                 .then(data => {
                     console.log(data);
                     if (data.deletedCount > 0) {
-                        alert('deleted successful');
+                      Swal.fire('Hey', 'Delete Done', 'success');
                         const remaining = MyToys.filter(Toys => Toys._id !== id);
                         setMyToys(remaining);
                     }
@@ -36,6 +39,10 @@ const MyToy = () => {
     }
     return (
       <div>
+        
+        <Helmet>
+        <title>Animal-Toy-planet |My Toy</title>
+      </Helmet>
       <div>
 
       </div>

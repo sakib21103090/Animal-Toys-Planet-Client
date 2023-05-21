@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { useForm } from 'react-hook-form';
 import { AuthContext } from '../Providers/AuthProviders';
-
+import { Helmet } from 'react-helmet';
 const AddAToy = () => {
 
     const {user} = useContext(AuthContext);
@@ -24,6 +24,9 @@ const AddAToy = () => {
     };
     return (
         <div>
+           <Helmet>
+           <title>Animal-Toy-planet | Add A Toy</title>
+         </Helmet>
             <div>
                  <h2 className="text-center font-bold text-black text-5xl m-6 p-6">Add A Toy</h2>
             </div>

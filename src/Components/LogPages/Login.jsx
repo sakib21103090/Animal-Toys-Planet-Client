@@ -2,6 +2,8 @@ import React, { useContext, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../Providers/AuthProviders';
 import SignInMethod from '../SignInMethod/SignInMethod';
+import Swal from 'sweetalert2';
+import 'sweetalert2/dist/sweetalert2.css';
 
 // import {  FaGithub, FaGoogle } from 'react-icons/fa';
 // import PopUp from '../PopUp/PopUp';;
@@ -14,14 +16,16 @@ const Login = () => {
   
   
     const from =location.state?.from?.pathname || '/';
-  
+    
     const HandelLogin=event=>{
       event.preventDefault();
       const form =event.target;
       const email=form.email.value;
       const password=form.password.value;
       console.log(email,password);
+      Swal.fire('Hey', 'login successful', 'success');
       setError('')
+
   
       
       SignIn(email,password)
@@ -49,7 +53,7 @@ const Login = () => {
                 <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-lime-100">
                     <div className="card-body">
                         <h1 className="text-3xl text-center font-bold">Login Please</h1>
-                        <form onSubmit={HandelLogin}>
+                        <form onSubmit={HandelLogin }>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Email</span>

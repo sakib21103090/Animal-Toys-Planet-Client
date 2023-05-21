@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet';
 
 const AllToys = () => {
     const [AllToys, setAllToys] = useState([]);
@@ -29,6 +30,9 @@ const AllToys = () => {
    
     return (
         <div>
+           <Helmet>
+           <title>Animal-Toy-planet | AllToys</title>
+         </Helmet>
             <div>
 
             </div>
