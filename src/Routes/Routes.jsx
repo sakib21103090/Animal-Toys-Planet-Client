@@ -44,7 +44,7 @@ const router = createBrowserRouter([
         },
         {
           path : 'modal/:id',
-            element : <Modal></Modal>,
+            element :<Modal></Modal>,
             loader: ({params}) => fetch(`http://localhost:5000/allToy/${params.id}`)
         },
         {
