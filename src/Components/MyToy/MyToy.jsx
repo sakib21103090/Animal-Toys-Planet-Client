@@ -71,7 +71,7 @@ const MyToy = () => {
                     index={index}
                     ></Delete>
             ))}
-
+    
     </tbody> 
     <tfoot>
       <tr>

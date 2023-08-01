@@ -24,12 +24,16 @@ const NavBarMain = () => {
             <li><Link className='text-black-300' to="/AddAToy">Add A Toy</Link> </li>
             <li><Link className='text-black-300' to="/MyToy">My Toys</Link> </li>
             <li><Link className='text-black-300' to="/Blog">Blog</Link> </li>
+            <div className=" navbar-end">
+          {user && <img className='rounded-full w-[30px] md:m-4' src={user.photoURL}  /> }
+           {user ? <button onClick={handleLogOut} className="btn btn-outline bg-lime-100 md:m-4">Log Out</button>:<Link to="/login" className="btn btn-success bg-lime-100 md:mx-4">Login</Link> }
+        </div>
               
             
             </ul>
           </div>
            
-          <p className="btn btn-ghost font-bold normal-case text-xl "> <img className='w-[80px] m-3 rounded-full' src={`https://i.ibb.co/zPb35SC/headuyhi.jpg`} alt="" /> <span className="text-green-600">Animal-</span><span className="text-rose-600">Toys-</span ><span className="text-amber-400">
+          <p className="btn btn-ghost font-bold normal-case text-xl   "> <img className='w-[80px] m-3 rounded-full' src={`https://i.ibb.co/zPb35SC/headuyhi.jpg`} alt="" /> <span className="text-green-600">Animal-</span><span className="text-rose-600">Toys-</span ><span className="text-amber-400">
           Planet</span></p>
         </div>
         <div className="navbar-center  hidden lg:flex">
@@ -40,12 +44,18 @@ const NavBarMain = () => {
           { user&&<li ><Link className='text-lime-200' to="/MyToy">My Toys</Link> </li>}
          <li><Link className='text-lime-200' to="/Blog">Blog</Link> </li>
           </ul>
+       
+        <div className="hidden md:block ">
+        {user ? <button onClick={handleLogOut} className="nav-btn md:m-2">Log Out</button>:<Link to="/login" className="nav-btn md:mx-4">Login</Link> }
+          </div>
         </div>
         <div>     
         </div>
-        <div className="navbar-end">
-          {user && <img className='rounded-full w-[50px] m-4' src={user.photoURL}  /> }
-           {user ? <button onClick={handleLogOut} className="btn btn-outline bg-lime-100 m-4">Log Out</button>:<Link to="/login" className="btn btn-success bg-lime-100 mx-4">Login</Link> }
+        <div className=" navbar-end  ">
+          <div className="hidden md:block">
+          {user && <img className='rounded-full w-[40px] md:m-2' src={user.photoURL}  /> }
+        </div>
+        
         </div>
       </div>
     );

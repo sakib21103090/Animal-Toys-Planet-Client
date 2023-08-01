@@ -36,7 +36,7 @@ const Category = () => {
     </TabList>
 
     <TabPanel>
-      <div className="card lg:card-side mx-[30px] bg-base-100 shadow-xl  ">
+      <div className="card lg:card-side  h-full  bg-base-100 shadow-xl  ">
             {
                    ToysData?.Animals?.[0]?.toys?.map(Toy => <LoadData
                    Toy={Toy}

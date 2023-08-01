@@ -44,9 +44,9 @@ const AllToys = () => {
           <input
             onChange={(e) => setSearchName(e.target.value)}
             type="text"
-            className="p-1  border-r-emerald-400  bg-orange-200"
+            className="p-1  border-r-emerald-400  bg-purple-200"
           />{" "}
-          <button onClick={handleSearch} className="btn btn-outline bg-orange-400">Search</button>
+          <button onClick={handleSearch} className="all-btn ">Search</button>
         </div>
             <div className='m-[40px]'>
             <div className="overflow-x-auto ">
@@ -73,7 +73,7 @@ const AllToys = () => {
               <td>{Toys.price}</td> 
               <td>{Toys.quantity}</td>
               <td> <Link to={`/modal/${Toys._id}`}><button htmlFor="my-modal-6" className="btn btn-outline btn-sm w-[60px] bg-lime-400">Details</button></Link> </td>
-
+            
                
               </tr>
             ))}

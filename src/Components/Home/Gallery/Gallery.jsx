@@ -15,16 +15,16 @@ const Gallery = () => {
             </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 m-4">
         <div className="aos-item" data-aos="fade-up">
-          <img   src={`https://i.ibb.co/0mDjYyX/1.jpg`} alt="Image" className="w-[600px] h-[260px] rounded" />
+          <img   src={`https://i.ibb.co/DKskJDk/repe1.jpg`} alt="Image" className="w-[600px] h-[260px] rounded" />
         </div>
         <div className="aos-item" data-aos="fade-up">
-          <img src={`https://i.ibb.co/hVQcKdW/2.jpg`} alt="Image" className="w-[600px] h-[260px] rounded" />
+          <img src={`https://i.ibb.co/DgbLR0W/sing-1.jpg`} alt="Image" className="w-[600px] h-[260px] rounded" />
         </div>
         <div className="aos-item" data-aos="fade-up">
-          <img src={`https://i.ibb.co/tYNCkg4/3.jpg`} alt="Image" className="w-[600px] h-[260px]  rounded" />
+          <img src={`https://i.ibb.co/R9b1bns/td1.jpg`} alt="Image" className="w-[600px] h-[260px]  rounded" />
         </div>
         <div className="aos-item" data-aos="fade-up">
-          <img src={`https://i.ibb.co/jw4bVMF/4.jpg`} alt="Image" className="w-[600px] h-[260px]  rounded" />
+          <img src={`https://i.ibb.co/YdQ0m7t/repe2.jpg`} alt="Image" className="w-[600px] h-[260px]  rounded" />
         </div>
         <div className="aos-item" data-aos="fade-up">
           <img src={`https://i.ibb.co/ydf3VYb/5.jpg`} alt="Image" className="w-[600px] h-[260px]  rounded" />
@@ -39,25 +39,25 @@ const Gallery = () => {
           <img src={`https://i.ibb.co/WvnV7gH/8.jpg`} alt="Image" className="w-[600px] h-[260px] rounded" />
         </div>
         <div className="aos-item" data-aos="fade-up">
-          <img src={`https://i.ibb.co/8YzcBz6/9.jpg`} alt="Image" className="w-[600px] h-[260px] rounded" />
+          <img src={`https://i.ibb.co/QdGqgW1/sw2.jpg`} alt="Image" className="w-[600px] h-[260px] rounded" />
         </div>
         <div className="aos-item" data-aos="fade-up">
-          <img src={`https://i.ibb.co/SBBvWjY/11.jpg`} alt="Image" className="w-[600px] h-[260px] rounded" />
+          <img src={`https://i.ibb.co/tb5TWhP/ti2.jpg`} alt="Image" className="w-[600px] h-[260px] rounded" />
         </div>
         <div className="aos-item" data-aos="fade-up">
-          <img src={`https://i.ibb.co/Hgq1KHP/12.jpg`} alt="Image" className="w-[600px] h-[260px] rounded" />
+          <img src={`https://i.ibb.co/q9y5RHX/tt2.jpg`} alt="Image" className="w-[600px] h-[260px] rounded" />
         </div>
         <div className="aos-item" data-aos="fade-up">
-          <img src={`https://i.ibb.co/9NMqT1W/13.jpg`} alt="Image" className="w-[600px] h-[260px] rounded" />
+          <img src={`https://i.ibb.co/d238Kqs/ti1.jpg`} alt="Image" className="w-[600px] h-[260px] rounded" />
         </div>
         <div className="aos-item" data-aos="fade-up">
-          <img src={`https://i.ibb.co/cJn62DM/14.jpg`} alt="Image" className="w-[600px] h-[260px] rounded" />
+          <img src={`https://i.ibb.co/sCDj5sk/tt1.jpg`} alt="Image" className="w-[600px] h-[260px] rounded" />
         </div>
         <div className="aos-item" data-aos="fade-up">
-          <img src={` https://i.ibb.co/BBt0FjW/15.jpg`} alt="Image" className="w-[600px] h-[260px] rounded" />
+          <img src={` https://i.ibb.co/cN3WYyH/td3.jpg`} alt="Image" className="w-[600px] h-[260px] rounded" />
         </div>
         <div className="aos-item" data-aos="fade-up">
-          <img src={`https://i.ibb.co/CvJLsw7/3B-c.jpg`} alt="Image" className="w-[600px] h-[260px] rounded" />
+          <img src={`https://i.ibb.co/QdGqgW1/sw2.jpg`} alt="Image" className="w-[600px] h-[260px] rounded" />
         </div>
         {/* Add more images as needed */}
       </div>

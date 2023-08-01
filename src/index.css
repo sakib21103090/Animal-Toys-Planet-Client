@@ -2,3 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
+.card-Image {
+    width: 75%; 
+    height: 350px; 
+    object-fit: cover; 
+    
+  }
+
+  .all-btn {
+    padding: 6px 16px;
+    border: none;
+    background-color: #801adf; 
+    color: white; 
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top:10px ;
+  }
+  .nav-btn {
+    padding: 6px 16px;
+    border: none;
+    background-color: #c0f17e; 
+    color: rgb(0, 0, 0); 
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top:10px ;
+  }
+  
+  .all-btn:hover {
+    background-color: #cd8ce0; 
+  }
+  
+  .all-btn:focus {
+    outline: none; 
+  }
+  
+  .all-btn:active {
+    background-color: #3a033f; 
+  }
