@@ -78,17 +78,7 @@ const AllToys = () => {
               </tr>
             ))}
           </tbody> 
-          <tfoot>
-            <tr>
-            <th>SL</th> 
-            <th> SellerName</th> 
-              <th>Toy Name</th> 
-              <th>Sub-category</th> 
-              <th>Price</th> 
-              <th>Available Quantity</th>
-              <th>Button</th>
-            </tr>
-          </tfoot>
+          
         </table>
       </div>
             </div>

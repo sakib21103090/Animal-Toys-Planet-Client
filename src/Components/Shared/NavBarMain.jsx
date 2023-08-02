@@ -18,22 +18,22 @@ const NavBarMain = () => {
             <label tabIndex={0} className="btn btn-success lg:hidden">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
             </label>
-            <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow font-bold bg-lime-100 rounded-box w-52">
+            <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow font-bold   bg-lime-100 rounded-box w-52">
             <li><Link className='text-black-300' to="/">Home</Link> </li>
             <li><Link className='text-black-300' to="/AllToys">All Toys</Link> </li>
             <li><Link className='text-black-300' to="/AddAToy">Add A Toy</Link> </li>
             <li><Link className='text-black-300' to="/MyToy">My Toys</Link> </li>
             <li><Link className='text-black-300' to="/Blog">Blog</Link> </li>
             <div className=" navbar-end">
-          {user && <img className='rounded-full w-[30px] md:m-4' src={user.photoURL}  /> }
-           {user ? <button onClick={handleLogOut} className="btn btn-outline bg-lime-100 md:m-4">Log Out</button>:<Link to="/login" className="btn btn-success bg-lime-100 md:mx-4">Login</Link> }
+          {user && <img className='rounded-full w-[30px]  md:m-4' src={user.photoURL}  /> }
+           {user ? <button onClick={handleLogOut} className="nav-btn md:m-4">Log Out</button>:<Link to="/login" className="btn btn-success bg-lime-100 md:mx-4">Login</Link> }
         </div>
               
             
             </ul>
           </div>
            
-          <p className="btn btn-ghost font-bold normal-case text-xl   "> <img className='w-[80px] m-3 rounded-full' src={`https://i.ibb.co/zPb35SC/headuyhi.jpg`} alt="" /> <span className="text-green-600">Animal-</span><span className="text-rose-600">Toys-</span ><span className="text-amber-400">
+          <p className="btn btn-ghost font-bold normal-case text-xl   "> <img className='w-[80px]  rounded-full' src={`https://i.ibb.co/zPb35SC/headuyhi.jpg`} alt="" /> <span className="text-green-600">Animal-</span><span className="text-rose-600">Toys-</span ><span className="text-amber-400">
           Planet</span></p>
         </div>
         <div className="navbar-center  hidden lg:flex">

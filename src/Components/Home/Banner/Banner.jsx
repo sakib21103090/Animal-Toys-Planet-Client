@@ -7,100 +7,38 @@ import img5 from '../../../assets/5b.jpg'
 import img6 from '../../../assets/sc14581.jpg'
 
 const Banner = () => {
-    return (
-        <div className="carousel h-[700px]  ">
-        <div id="slide1" className="carousel-item relative w-full">
-          <img src={img1} className="w-full" />
-          <div className="absolute  flex items-center transform h-full left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21)]">
-             <div className='text-white lg:w-50 sm:w-1/2 m-6'>
-             <h3 className=' text-6xl font-bold text-lime-300' >Pet Pals</h3>
-              <p className="text-2xl "> Bring home the joy of having pets with adorable pet-themed toys. <br /> Example Toys: Plush cats, dogs, hamsters, and rabbits; pet care playsets, pet carrier sets, and pet grooming kits </p>
-             </div>
-      
-      
-          </div>
-          <div className="absolute flex justify-center  transform -translate-y-1/2 left-5 right-5 bottom-0 ">
-            <a href="#slide4" className="btn btn-circle  bg-red-600 mr-4">❮</a> 
-            <a href="#slide2" className="btn btn-circle bg-red-600 ">❯</a>
-          </div>
-        </div> 
-        <div id="slide2" className="carousel-item relative w-full">
-          <img src={img2}  className="w-full " />
-          <div className="absolute  flex items-center transform h-full left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21)]">
-          <div className='text-white lg:w-50 sm:w-1/2 m-6'>
-             <h3 className=' text-6xl font-bold text-lime-300' >Woodland Creatures </h3>
-             <p className="text-2xl text-white">Explore the enchanting world of woodland animals. <br /> Example Toys: Plush foxes, bears, squirrels, and rabbits; forest playsets with trees, logs, and animal figurines. </p>
-             </div>
-      
-      
-          </div>
-          <div className="absolute flex justify-center transform -translate-y-1/2 left-5 right-5 bottom-0">
-            <a href="#slide1" className="btn btn-circle bg-red-600  mr-4">❮</a> 
-            <a href="#slide3" className="btn btn-circle bg-red-600 ">❯</a>
-          </div>
-        </div> 
-        <div id="slide3" className="carousel-item relative w-full">
-          <img src={img3}  className="w-full " />
-          <div className="absolute  flex items-center transform h-full left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21)]">
-          <div className='text-white lg:w-50 sm:w-1/2 m-6'>
-             <h3 className=' text-6xl font-bold text-lime-300' >Aquatic Adventures </h3>
-             <p className="text-2xl text-white"> Dive into underwater fun with aquatic animal toys. <br /> Example Toys: Dolphin plushies, shark figures, underwater playsets with coral reefs and marine animals, bath toys. </p>
-             </div>
-      
-      
-          </div>
-          <div className="absolute flex justify-center transform -translate-y-1/2 left-5 right-5 bottom-0">
-            <a href="#slide2" className="btn btn-circle  bg-red-600  mr-4">❮</a> 
-            <a href="#slide4" className="btn btn-circle bg-red-600 ">❯</a>
-          </div>
-        </div> 
-        <div id="slide4" className="carousel-item relative w-full">
-          <img src={img4}  className="w-full " />
-          <div className="absolute  flex items-center transform h-full left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21)]">
-          <div className='text-white lg:w-50 sm:w-1/2 m-6'>
-             <h3 className=' text-6xl font-bold text-lime-300' >Jungle Explorers </h3>
-             <p className="text-2xl text-white">Venture into the wild with jungle animal toys. <br /> Example Toys: Plush lions, elephants, monkeys, and tigers; jungle playsets with trees, vines, and animal figurines. </p>
-             </div>
-      
-      
-          </div>
-          <div className="absolute flex justify-center transform -translate-y-1/2 left-5 right-5 bottom-0">
-            <a href="#slide3" className="btn btn-circle bg-red-600  mr-4">❮</a> 
-            <a href="#slide5" className="btn btn-circle bg-red-600 ">❯</a>
-          </div>
-        </div>
-        <div id="slide5" className="carousel-item relative w-full">
-          <img src={img5}  className="w-full " />
-          <div className="absolute  flex items-center transform h-full left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21)]">
-          <div className='text-white lg:w-50 sm:w-1/2 m-6'>
-             <h3 className=' text-6xl font-bold text-lime-300' >Feathered Flyers </h3>
-             <p className="text-2xl text-white">Soar through the skies with bird-themed toys <br /> Example Toys:  Plush owls, eagles, parrots, and penguins; birdhouse kits, flying bird toys, educational bird identification sets.</p>
-             </div>
-      
-      
-          </div>
-          <div className="absolute flex justify-center transform -translate-y-1/2 left-5 right-5 bottom-0">
-            <a href="#slide4" className="btn btn-circle bg-red-600  mr-4">❮</a> 
-            <a href="#slide6" className="btn btn-circle bg-red-600 ">❯</a>
-          </div>
-        </div>
-        <div id="slide6" className="carousel-item relative w-full">
-          <img src={img6}  className="w-full " />
-          <div className="absolute  flex items-center transform h-full left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21)]">
-              <div className='text-white lg:w-50 sm:w-1/2 m-6'>
-             <h3 className=' text-6xl font-bold text-lime-300' >Roaming Safari </h3>
-             <p className="text-2xl text-white">Explore the enchanting world of woodland animals. <br /> Example Toys: Plush foxes, bears, squirrels, and rabbits; forest playsets with trees, logs, and animal figurines. </p>
-             </div>
-      
-          </div>
-          <div className="absolute flex justify-center  transform -translate-y-1/2 left-5 right-5 bottom-0 ">
-            <a href="#slide4" className="btn btn-circle bg-red-600 mr-4">❮</a> 
-            <a href="#slide1" className="btn btn-circle bg-red-600 ">❯</a>
-          </div>
-        </div>
-      </div>
-      
-    );
+  return (
+    <div>
+        <div className="carousel w-full">
+<div id="item1" className="carousel-item w-full">
+<img src={img1} className="w-full h-[600px]" />
+</div> 
+<div id="item2" className="carousel-item w-full">
+<img src={img2} className="w-full h-[600px]" />
+</div> 
+<div id="item3" className="carousel-item w-full">
+<img src={img3} className="w-full h-[600px]" />
+</div> 
+<div id="item4" className="carousel-item w-full">
+<img src={img4} className="w-full h-[600px]" />
+</div>
+<div id="item4" className="carousel-item w-full">
+<img src={img5} className="w-full h-[600px]" />
+</div>
+<div id="item4" className="carousel-item w-full">
+<img src={img6} className="w-full h-[600px]" />
+</div>
+</div> 
+<div className="flex justify-center w-full  h-[5px] py-2 gap-2">
+<a href="#item1" className="btn  bg-lime-400 text-black">1</a> 
+<a href="#item2" className="btn h-[10px] bg-lime-400 text-black">2</a> 
+<a href="#item3" className="btn h-[10px] bg-lime-400 text-black">3</a> 
+<a href="#item4" className="btn h-[10px] bg-lime-400 text-black">4</a>
+<a href="#item4" className="btn h-[10px] bg-lime-400 text-black">5</a>
+<a href="#item4" className="btn h-[10px] bg-lime-400 text-black">6</a>
+</div>
+    </div>
+);
 };
 
 export default Banner;

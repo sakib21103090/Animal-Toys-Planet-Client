@@ -73,18 +73,7 @@ const MyToy = () => {
             ))}
     
     </tbody> 
-    <tfoot>
-      <tr>
-      <th>SL</th>  
-        <th>Toy Name</th> 
-        <th>Sub-category</th> 
-        <th>pictureUrl</th> 
-        <th>Price</th> 
-        <th>Available Quantity</th>
-        <th>Update</th>
-        <th>Delete</th>
-      </tr>
-    </tfoot>
+    
   </table>
 </div>
       </div>
