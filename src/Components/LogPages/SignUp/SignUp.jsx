@@ -41,7 +41,7 @@ const SignUp = () => {
                <Helmet>
         <title>Animal-Toy-planet |SignUp</title>
       </Helmet>
-            <div className="hero min-h-screen bg-rose-100">
+            <div className="hero min-h-screen add-bg">
     <div className="hero-content flex-col lg:flex-row">
         <div className="w-1/2 mr-12">
         <img className='w-[600px] rounded-3xl' src={`https://i.ibb.co/5FgjVhq/download.png`} alt="" />

@@ -34,7 +34,7 @@ const Category = () => {
       <Tab>{ToysData?.Animals?.[2]?.name}</Tab>
       
     </TabList>
-
+<div className='lg:w-[900px] mx-auto'>
     <TabPanel>
       <div className="card lg:card-side  h-full  bg-base-100 shadow-xl  ">
             {
@@ -62,6 +62,7 @@ const Category = () => {
                 }
                 </div>
     </TabPanel>
+    </div>
   </Tabs>
           
          </div>

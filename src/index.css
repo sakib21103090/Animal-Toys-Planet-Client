@@ -43,6 +43,10 @@
   .all-btn:active {
     background-color: #3a033f; 
   }
+  .card-bg{
+    background: linear-gradient( #305f3c,rgb(210, 65, 188),rgb(136, 234, 239));
+  }
   .add-bg{
-    background: linear-gradient( #30425f,rgb(46, 52, 102),rgb(33, 21, 85));
+    background-image: url(../src/assets/dark-gradient.jpg);
+   
   }

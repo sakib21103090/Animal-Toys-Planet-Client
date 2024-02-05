@@ -28,10 +28,10 @@ const AddAToy = () => {
            <title>Animal-Toy-planet | Add A Toy</title>
          </Helmet>
             <div>
-                 <h2 className="text-center font-bold  text-5xl m-6 p-6">Add A Toy</h2>
+                 <h2 className="text-center font-bold  text-5xl  p-12">Add A Toy</h2>
             </div>
             <div >
-            <form onSubmit={handleSubmit(onSubmit)} className="max-w-md mx-auto mb-5">
+            <form onSubmit={handleSubmit(onSubmit)} className="max-w-md mx-auto ">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
           <label htmlFor="pictureUrl" className="block  mb-1"> Toy Picture URL:</label>
