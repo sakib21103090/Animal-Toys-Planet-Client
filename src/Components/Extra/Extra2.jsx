@@ -3,7 +3,7 @@ import React from 'react';
 const Extra2 = () => {
     return (
 
- <div className='m-6'>
+ <div className='w-[1400px] mx-auto'>
     <div><h4 className="text-center font-bold text-black text-5xl m-6 p-6">Top six Toy  brand 2023</h4></div>
     <div>
     <div className="card lg:card-side bg-base-100 shadow-xl">

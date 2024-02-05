@@ -12,7 +12,7 @@ const NavBarMain = () => {
   }
    
     return (
-        <div className="navbar bg-slate-900 ">
+        <div className="navbar bg-slate-900 fixed z-10">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-success lg:hidden">

@@ -11,22 +11,22 @@ const Banner = () => {
     <div>
         <div className="carousel w-full">
 <div id="item1" className="carousel-item w-full">
-<img src={img1} className="w-full h-[600px]" />
+<img src={img1} className="w-full h-[750px]" />
 </div> 
 <div id="item2" className="carousel-item w-full">
-<img src={img2} className="w-full h-[600px]" />
+<img src={img2} className="w-full h-[750px]" />
 </div> 
 <div id="item3" className="carousel-item w-full">
-<img src={img3} className="w-full h-[600px]" />
+<img src={img3} className="w-full h-[750px]" />
 </div> 
 <div id="item4" className="carousel-item w-full">
-<img src={img4} className="w-full h-[600px]" />
+<img src={img4} className="w-full h-[750px]" />
 </div>
-<div id="item4" className="carousel-item w-full">
-<img src={img5} className="w-full h-[600px]" />
+<div id="item5" className="carousel-item w-full">
+<img src={img5} className="w-full h-[750px]" />
 </div>
-<div id="item4" className="carousel-item w-full">
-<img src={img6} className="w-full h-[600px]" />
+<div id="item6" className="carousel-item w-full">
+<img src={img6} className="w-full h-[750px]" />
 </div>
 </div> 
 <div className="flex justify-center w-full  h-[5px] py-2 gap-2">
@@ -34,8 +34,8 @@ const Banner = () => {
 <a href="#item2" className="btn h-[10px] bg-lime-400 text-black">2</a> 
 <a href="#item3" className="btn h-[10px] bg-lime-400 text-black">3</a> 
 <a href="#item4" className="btn h-[10px] bg-lime-400 text-black">4</a>
-<a href="#item4" className="btn h-[10px] bg-lime-400 text-black">5</a>
-<a href="#item4" className="btn h-[10px] bg-lime-400 text-black">6</a>
+<a href="#item5" className="btn h-[10px] bg-lime-400 text-black">5</a>
+<a href="#item6" className="btn h-[10px] bg-lime-400 text-black">6</a>
 </div>
     </div>
 );
