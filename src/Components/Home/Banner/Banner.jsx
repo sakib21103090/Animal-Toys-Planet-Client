@@ -30,12 +30,12 @@ const Banner = () => {
 </div>
 </div> 
 <div className="flex justify-center w-full  h-[5px] py-2 gap-2">
-<a href="#item1" className="btn  bg-lime-400 text-black">1</a> 
-<a href="#item2" className="btn h-[10px] bg-lime-400 text-black">2</a> 
-<a href="#item3" className="btn h-[10px] bg-lime-400 text-black">3</a> 
-<a href="#item4" className="btn h-[10px] bg-lime-400 text-black">4</a>
-<a href="#item5" className="btn h-[10px] bg-lime-400 text-black">5</a>
-<a href="#item6" className="btn h-[10px] bg-lime-400 text-black">6</a>
+<a href="#item1" className="btn  bg-lime-400 text-blue-500">1</a> 
+<a href="#item2" className="btn h-[10px] bg-lime-400 text-blue-500">2</a> 
+<a href="#item3" className="btn h-[10px] bg-lime-400 text-blue-500">3</a> 
+<a href="#item4" className="btn h-[10px] bg-lime-400 text-blue-500">4</a>
+<a href="#item5" className="btn h-[10px] bg-lime-400 text-blue-500">5</a>
+<a href="#item6" className="btn h-[10px] bg-lime-400 text-blue-500">6</a>
 </div>
     </div>
 );

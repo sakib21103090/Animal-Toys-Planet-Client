@@ -14,10 +14,10 @@ const Extra = () => {
            <div className="card-body items-center text-center">
          <h2 className="card-title">ToyCo</h2>
            <p><span className='font-bold'>Address: </span> 123 Main Street, Toyville, USA</p>
-           <p>ToyCo is a leading toy manufacturer and retailer, offering a wide range of high-quality toys for children of all ages. With a focus on innovation and creativity. </p>
+           <p className=' text-start '>ToyCo is a leading toy manufacturer and retailer, offering a wide range of high-quality toys for children of all ages. With a focus on innovation and creativity. </p>
            
          <div className="card-actions">
-      <button className="all-btn">about more</button>
+      <a href="https://www.toyco.co.nz/"> <button className='all-btn'>About more</button></a>
     </div>
   </div>
 </div>
@@ -28,10 +28,10 @@ const Extra = () => {
            <div className="card-body items-center text-center">
          <h2 className="card-title">LEGO</h2>
            <p><span className='font-bold'>Address: </span>1 LEGO Drive, Bricktown, Denmark</p>
-           <p> LEGO is a globally recognized brand that specializes in the production of colorful interlocking plastic bricks and sets. </p>
+           <p className=' text-start '> LEGO is a globally recognized brand that specializes in the production of colorful interlocking plastic bricks and sets. </p>
            
          <div className="card-actions">
-      <button className="all-btn">about more</button>
+      <a href="https://www.lego.com/en-us?age-gate=grown_up"> <button className='all-btn'>About more</button></a>
     </div>
   </div>
 </div>
@@ -42,10 +42,11 @@ const Extra = () => {
            <div className="card-body items-center text-center">
          <h2 className="card-title">Mattel </h2>
            <p> <span className='font-bold'>Address: </span> 555 Toy Avenue, Playtown, USA</p>
-           <p>Mattel is a leading toy company known for iconic brands such as Barbie, Hot Wheels, and Fisher-Price. </p>
+           <p className=' text-start '>Mattel is a leading toy company known for iconic brands such as Barbie, Hot Wheels, and Fisher-Price. </p>
            
          <div className="card-actions">
-      <button className="all-btn">about more</button>
+      
+      <a href="https://about.mattel.com/"> <button className='all-btn'>About more</button></a>
     </div>
   </div>
 </div>
@@ -56,10 +57,10 @@ const Extra = () => {
            <div className="card-body items-center text-center">
          <h2 className="card-title">Hasbro </h2>
            <p> <span className='font-bold'>Address: </span> 123 Fun Lane, Gameville, USA</p>
-           <p>Hasbro is a multinational toy and board game company that delights children and families with popular brands like Monopoly, Nerf, and Transformers. </p>
+           <p className=' text-start '>Hasbro is a multinational toy and board game company that delights children and families with popular brands like Monopoly, Nerf, and Transformers. </p>
            
          <div className="card-actions">
-      <button className="all-btn">about more</button>
+      <a href="https://shop.hasbro.com/worldwide"> <button className='all-btn'>About more</button></a>
     </div>
   </div>
 </div>
@@ -70,10 +71,10 @@ const Extra = () => {
            <div className="card-body items-center text-center">
          <h2 className="card-title">Fisher-Price </h2>
            <p> <span className='font-bold'>Address: </span> 555 Toy Avenue, Playtown, USA</p>
-           <p>Mattel is a leading toy company known for iconic brands such as Barbie, Hot Wheels, and Fisher-Price. </p>
+           <p className=' text-start '>Mattel is a leading toy company known for iconic brands such as Barbie, Hot Wheels, and Fisher-Price. </p>
            
          <div className="card-actions">
-      <button className="all-btn">about more</button>
+      <a href="https://www.toysrus.com/brands/fisher-price/"> <button className='all-btn'>About more</button></a>
     </div>
   </div>
 </div>
@@ -83,11 +84,11 @@ const Extra = () => {
            </figure>
            <div className="card-body items-center text-center">
          <h2 className="card-title">MGA Entertainment </h2>
-           <p><span className='font-bold'>Address: </span> 456 Playful Avenue, Toyland, USA</p>
-           <p>Mattel is a leading toy company known for iconic brands such as Barbie, Hot Wheels, and Fisher-Price.</p>
+           <p><span className='font-bold '>Address: </span> 456 Playful Avenue, Toyland, USA</p>
+           <p className=' text-start '>Mattel is a leading toy company known for iconic brands such as Barbie, Hot Wheels, and Fisher-Price.</p>
            
          <div className="card-actions">
-      <button className="all-btn">about more</button>
+      <a href="https://www.mgae.com/"> <button className='all-btn'>About more</button></a>
     </div>
   </div>
 </div>

@@ -36,7 +36,7 @@ const Category = () => {
     </TabList>
 <div className='lg:w-[900px] mx-auto'>
     <TabPanel>
-      <div className="card lg:card-side  h-full  bg-base-100 shadow-xl  ">
+      <div className="card lg:card-side gap-2 h-full  bg-base-900  ">
             {
                    ToysData?.Animals?.[0]?.toys?.map(Toy => <LoadData
                    Toy={Toy}
@@ -45,7 +45,7 @@ const Category = () => {
                 </div>
     </TabPanel>
     <TabPanel>
-    <div className="card lg:card-side mx-auto bg-base-100 shadow-xl ">
+    <div className="card lg:card-side mx-auto gap-2   bg-base-900  ">
             {
                    ToysData?.Animals?.[1]?.toys?.map(Toy => <LoadData
                    Toy={Toy}
@@ -54,7 +54,7 @@ const Category = () => {
                 </div>
     </TabPanel>
     <TabPanel>
-    <div className="card lg:card-side mx-auto bg-base-100 shadow-xl ">
+    <div className="card lg:card-side mx-auto gap-2  bg-base-900  ">
             {
                    ToysData?.Animals?.[2]?.toys?.map(Toy => <LoadData
                    Toy={Toy}

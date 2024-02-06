@@ -50,3 +50,11 @@
     background-image: url(../src/assets/dark-gradient.jpg);
    
   }
+  /* For the rating star color */
+  .fa-star.field{
+    
+    color: #FFC014;
+   }
+   .fa-star.empty{
+       color: #AEAEAE;
+   }

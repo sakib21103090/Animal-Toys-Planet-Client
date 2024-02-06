@@ -22,7 +22,7 @@ const Footer = () => {
           <span className="footer-title  text-lime-200">Contact info</span> 
           <a className="link link-hover">About us</a> 
           <a className="link link-hover">Contact</a> 
-          <a className="link link-hover">email :sakibur11@gmail.com</a> 
+          <a className="link link-hover">Email :sakiburhasan11@gmail.com</a> 
           <a className="link link-hover">Hotline-0972545646</a>
         </div> 
         <div>

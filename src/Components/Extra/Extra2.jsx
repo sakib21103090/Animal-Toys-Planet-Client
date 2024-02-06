@@ -3,13 +3,13 @@ import React from 'react';
 const Extra2 = () => {
     return (
 
- <div className='w-[1400px] mx-auto'>
+ <div className='lg:w-[1400px] mx-auto'>
     <div><h4 className="text-center font-bold text-black text-5xl m-6 p-6">Top six Toy  brand 2023</h4></div>
     <div>
     <div className="card lg:card-side bg-base-100 shadow-xl">
 <figure><div className="h-96 carousel carousel-vertical rounded-box m-6 ">
         <div className="carousel-item h-full ">
-          <img className='m-2 rounded w-[600px]' src={`https://i.ibb.co/8Mdy8Mx/b1.jpg`} />
+          <img className='lg:m-2 rounded w-[600px]' src={`https://i.ibb.co/8Mdy8Mx/b1.jpg`} />
         </div> 
         <div className="carousel-item h-full">
           <img className='m-2 rounded w-[600px]' src={`https://i.ibb.co/NrdD7p4/b2.jpg`} />
@@ -31,7 +31,7 @@ const Extra2 = () => {
         </div>
       </div></figure>
 <div className="card-body">
-  <h2 className="card-title text-6xl font-bold text-red-600">Toy brand </h2>
+  <h2 className="card-title text-6xl font-bold text-red-600">Toy Brand </h2>
   <p className='text-5xl text-lime-600'>BRAND FINANCE TOYS 25 2023</p>
   <p className='text-4xl  text-black'>Here are the names of six popular toy brands show the  Vertical carousel.
   
